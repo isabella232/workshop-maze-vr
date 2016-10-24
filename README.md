@@ -16,10 +16,39 @@ There is even an editor available where you can hack your maze online 🎉 🎉
 
 # How To
 
-## Requirements
+## Setup
 
 * installed NodeJS version 6.x
  * see https://nodejs.org/en/download/package-manager/ for more information (e.g. how to install)
+
+### Option 1: Install on your computer
+
+* Install NodeJS 6.x locally: see https://nodejs.org/en/download/package-manager/
+
+### Option 2: Docker
+
+* Install Docker (or Docker Toolbox): see https://docs.docker.com/
+* Get the sources: `git clone https://github.com/Devoxx4KidsDE/workshop-maze-vr.git`
+* Switch to the new directory: `cd workshop-maze-vr`
+* Start container (will be downloaded from Dockerhub) `docker run -it -p 8080:8080 -v $(pwd)/app/examples/:/workspace/app/examples/ fbrnc/workshop-maze-vr:v1`
+* Edit the file to modify the maze: `app/examples/example.js`
+* Access the maze via 'http://localhost:8080' on your host system
+
+### Option 3: Vagrant + virtualbox
+
+* Install VirtualBox: https://www.virtualbox.org/wiki/Downloads
+* Install Vagrant: https://www.vagrantup.com/
+* Get the sources: `git clone https://github.com/Devoxx4KidsDE/workshop-maze-vr.git`
+* Switch to the new directory: `cd workshop-maze-vr`
+* Start virtual machine: `vagrant up`
+* Log in to the virtual machine: `vagrant ssh`
+* Start maze: `cd /vargant/ && npm start`
+* Edit the file to modify the maze (on your host): `app/examples/example.js`
+* Access the maze via 'http://localhost:12345' on your host system
+
+### Option 4: On a Raspberry Pi
+
+### Option 5: Boot a Ubuntu Live CD (from CD or USB)
 
 ## Start
 
