@@ -18,12 +18,14 @@ There is even an editor available where you can hack your maze online 🎉 🎉
 
 ## Setup
 
-* installed NodeJS version 6.x
- * see https://nodejs.org/en/download/package-manager/ for more information (e.g. how to install)
-
 ### Option 1: Install on your computer
 
 * Install NodeJS 6.x locally: see https://nodejs.org/en/download/package-manager/
+* Get the sources: `git clone https://github.com/Devoxx4KidsDE/workshop-maze-vr.git`
+* Switch to the new directory: `cd workshop-maze-vr`
+* Start the server: `npm start`
+* Edit the file to modify the maze: `app/examples/example.js`
+* Access the maze via 'http://localhost:8080'
 
 ### Option 2: Docker
 
